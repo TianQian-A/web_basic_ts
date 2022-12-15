@@ -1,5 +1,4 @@
 import type { AxiosResponse } from "axios";
-import type { HttpType } from "@/types/httpType";
 
 const statusMap = new Map([
   [400, "请求失败！请您稍后重试"],

@@ -2,7 +2,7 @@
 
 <template>
   <header>
-    <p class="font-bold text-duoduo-text-color-link bg-duoduo">SOME TEXT</p>
+    <p class="font-bold text-duoduo bg-duoduo-text-color-link bg-duoduo pb-safe">SOME TEXT</p>
     <img alt="Vue logo" class="logo bg-red-500" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">

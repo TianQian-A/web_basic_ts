@@ -1,13 +1,11 @@
-import { HttpType } from "@/types/httpType";
 import { handleStatus } from "./handleStatus";
 import type { AxiosError, AxiosResponse } from "axios";
+import { ResultCodeEnum } from "./codeEnum";
+
 // 响应成功的拦截函数
 export function handleResponseResolve(res: AxiosResponse<HttpType.ResultData>) {
   const { data } = res;
-  if (
-    Object.keys(data).includes("code") &&
-    data.code !== HttpType.ResultCodeEnum.SUCCESS
-  ) {
+  if (Object.keys(data).includes("code") && data.code !== ResultCodeEnum.SUCCESS) {
     //TODO Toast
     return Promise.reject(data);
   }
