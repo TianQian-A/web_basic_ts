@@ -1,1 +1,1 @@
-export * from "./modules/ApiTemp";
+export * from './modules/ApiTemp';

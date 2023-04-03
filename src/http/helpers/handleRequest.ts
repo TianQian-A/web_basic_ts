@@ -1,4 +1,4 @@
-import type { AxiosError, InternalAxiosRequestConfig } from "axios";
+import type { AxiosError, InternalAxiosRequestConfig } from 'axios';
 
 export function handleRequestResolve(config: InternalAxiosRequestConfig) {
   return config;

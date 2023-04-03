@@ -1,4 +1,4 @@
-import { httpInstance } from "..";
+import { httpInstance } from '..';
 
 export namespace ApiTemp {
   interface Req {
@@ -8,6 +8,6 @@ export namespace ApiTemp {
     name: string;
   }
   export const findUserById = (params: Req) => {
-    return httpInstance.get<Res>("/apis/findUser", params);
+    return httpInstance.get<Res>('/apis/findUser', params);
   };
 }

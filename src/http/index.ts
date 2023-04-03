@@ -1,7 +1,7 @@
-import axios, { type AxiosInstance, type AxiosRequestConfig } from "axios";
-import defaultConfig from "./helpers/defaultConfig";
-import { handleRequestReject, handleRequestResolve } from "./helpers/handleRequest";
-import { handleResponseReject, handleResponseResolve } from "./helpers/handleResponse";
+import axios, { type AxiosInstance, type AxiosRequestConfig } from 'axios';
+import defaultConfig from './helpers/defaultConfig';
+import { handleRequestReject, handleRequestResolve } from './helpers/handleRequest';
+import { handleResponseReject, handleResponseResolve } from './helpers/handleResponse';
 
 export class Http {
   readonly service: AxiosInstance;
