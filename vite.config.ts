@@ -1,10 +1,10 @@
-import { fileURLToPath, URL } from "node:url";
+import { fileURLToPath, URL } from 'node:url';
 
-import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
-import vueJsx from "@vitejs/plugin-vue-jsx";
-import AutoImport from "unplugin-auto-import/vite";
-import Components from "unplugin-vue-components/vite";
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import vueJsx from '@vitejs/plugin-vue-jsx';
+import AutoImport from 'unplugin-auto-import/vite';
+import Components from 'unplugin-vue-components/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -17,16 +17,16 @@ export default defineConfig({
         /\.vue$/,
         /\.vue\?vue/, // .vue
       ],
-      imports: ["@vueuse/core", "pinia", "vue", "vue-router"],
+      imports: ['@vueuse/core', 'pinia', 'vue', 'vue-router'],
     }),
     Components(),
   ],
   resolve: {
     alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url)),
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
   esbuild: {
-    drop: ["console", "debugger"],
+    drop: ['console', 'debugger'],
   },
 });
